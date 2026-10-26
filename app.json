@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "Obsidian Elite Simulator",
+    "slug": "obsidian-elite-simulator",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "android": {
+      "package": "com.obsidianelite.simulator"
+    },
+    "plugins": [
+      "expo-secure-store"
+    ]
+  }
+}
