@@ -24,7 +24,7 @@ jobs:
         with:
           packages: platform-tools
           log-accepted-android-sdk-licenses: false
-      - run: npm install
+      - run: npm ci
       - run: npx expo prebuild --platform android --non-interactive
       - name: Bundle JavaScript into the standalone debug APK
         run: |

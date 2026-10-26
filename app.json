@@ -2,13 +2,20 @@
   "expo": {
     "name": "Obsidian Elite Simulator",
     "slug": "obsidian-elite-simulator",
-    "version": "0.1.0",
+    "version": "0.3.0",
     "orientation": "portrait",
     "android": {
-      "package": "com.obsidianelite.simulator"
+      "package": "com.obsidianelite.simulator",
+      "versionCode": 3
     },
     "plugins": [
       "expo-secure-store"
-    ]
+    ],
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#081d58"
+    }
   }
 }
