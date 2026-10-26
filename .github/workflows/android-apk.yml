@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 45
     env:
       CI: "1"
@@ -21,6 +21,9 @@ jobs:
           distribution: temurin
           java-version: '17'
       - uses: android-actions/setup-android@v3
+        with:
+          packages: platform-tools
+          log-accepted-android-sdk-licenses: false
       - run: npm install
       - run: npx expo prebuild --platform android --non-interactive
       - name: Bundle JavaScript into the standalone debug APK
